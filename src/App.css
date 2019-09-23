@@ -10,6 +10,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 } */
+.container {
+  min-height: 150px;
+  width: 100%;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;    
+}
 
 .App-link {
   color: #09d3ac;

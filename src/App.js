@@ -10,12 +10,14 @@ import ClickImage from './components/ClickImage/ClickImage';
 
 function App() {
   return (
-    
+
     <div className="App">
       <MyHeader />
-      {images.map(image => 
-        <ClickImage alt={image.alt} key={image.id} imageURL={image.imageURL} />
-      )}
+      <div className="container">
+        {images.map(image =>
+          <ClickImage alt={image.alt} key={image.id} imageURL={image.imageURL} hasBeenClicked={false} />
+        )}
+      </div>
     </div>
   );
 }
