@@ -9,7 +9,7 @@ function ClickImage(props) {
             className="click-image" 
             src={props.imageURL} alt={props.alt} 
             key={props.id} 
-            onClick={() => props.updateClicked(props.hasBeenClicked)}
+            onClick={() => props.handleClick(props.hasBeenClicked)}
             >
             </img>
         </div>

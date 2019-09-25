@@ -1,8 +1,17 @@
 .MyHeader {
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100px;
-    background-color: red;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyHeader h1, h2, p {
+    margin-top: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
     color: white;
-    text-align: center;
-    line-height: 100px
 }

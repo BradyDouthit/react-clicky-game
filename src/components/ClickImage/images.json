@@ -32,11 +32,40 @@
     "hasBeenClicked": false,
     "imageURL": "https://vignette.wikia.nocookie.net/minecraft/images/e/ee/StoneBricksNew.png/revision/latest?cb=20190902223225",
     "alt": "Stone Brick Block"
-},{
+},
+{
     "id": 6,
     "name": "Cracked Stone Bricks",
     "hasBeenClicked": false,
     "imageURL": "https://vignette.wikia.nocookie.net/minecraft/images/6/66/CrackedStoneBricksNew.png/revision/latest?cb=20190902223613",
     "alt": "Cracked Stone Bricks Block"
+},
+{
+    "id": 7,
+    "name": "Crying Obsidian",
+    "hasBeenClicked": false,
+    "imageURL": "https://vignette.wikia.nocookie.net/minecraft/images/7/72/Crying_Obsidian.png/revision/latest?cb=20190905013328",
+    "alt": "Crying Obsidian Block"
+},
+{
+    "id": 8,
+    "name": "Emerald Ore",
+    "hasBeenClicked": false,
+    "imageURL": "https://vignette.wikia.nocookie.net/minecraft/images/a/a8/Emerald_Ore2.1.png/revision/latest?cb=20120530153619",
+    "alt": "Emerald Ore Block"
+},
+{
+    "id": 9,
+    "name": "Pumpkin",
+    "hasBeenClicked": false,
+    "imageURL": "https://vignette.wikia.nocookie.net/minecraft/images/1/17/Jack-O-Lantern.png/revision/latest?cb=20190912224739",
+    "alt": "Pumpkin Block"
+},
+{
+    "id": 10,
+    "name": "Crafting Table",
+    "hasBeenClicked": false,
+    "imageURL": "https://vignette.wikia.nocookie.net/minecraft/images/c/c0/Craftingtable.png/revision/latest?cb=20190831171159",
+    "alt": "Crafting Table"
 }
 ]

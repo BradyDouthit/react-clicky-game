@@ -12,12 +12,17 @@
 } */
 .container {
   min-height: 150px;
-  width: 100%;
-  background-color: gainsboro;
+  max-width: 75%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;    
+  justify-content: center;  
+  flex-wrap: wrap  
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+html {
+  background-image: url(./assets/black-green-triangles.svg)
 }
