@@ -8,9 +8,13 @@ import MyHeader from './components/MyHeader/MyHeader.js';
 
 import ClickImage from './components/ClickImage/ClickImage';
 
+const arrayShuffle = require('array-shuffle')
+
+const shuffledImages = arrayShuffle(images);
+
 class App extends React.Component {
   state = {
-    images,
+    shuffledImages,
     hasBeenClicked: false
   };
 
@@ -25,7 +29,7 @@ class App extends React.Component {
       <div className="App">
         <MyHeader />
         <div className="container">
-          {this.state.images.map(image =>
+          {this.state.shuffledImages.map(image =>
             <ClickImage
               alt={image.alt}
               id={image.id}
