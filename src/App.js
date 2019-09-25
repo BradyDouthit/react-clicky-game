@@ -10,26 +10,27 @@ import ClickImage from './components/ClickImage/ClickImage';
 
 const arrayShuffle = require('array-shuffle')
 
-const shuffledImages = arrayShuffle(images);
 
 class App extends React.Component {
   state = {
-    shuffledImages,
+    images,
     hasBeenClicked: false
   };
 
   updateClicked = () => {
-    this.setState({ hasBeenClicked: true });
+    
+    this.setState({ hasBeenClicked: true, images: arrayShuffle(images) });
   };
 
   render() {
-    console.log(this.state)
+    console.log(this.state.hasBeenClicked)
     return (
 
       <div className="App">
         <MyHeader />
         <div className="container">
-          {this.state.shuffledImages.map(image =>
+          {this.state.images.map(image =>
+          
             <ClickImage
               alt={image.alt}
               id={image.id}
