@@ -16,7 +16,9 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;  
-  flex-wrap: wrap  
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 70px 0; 
 }
 
 .App-link {
@@ -24,5 +26,5 @@
 }
 
 html {
-  background-image: url(./assets/black-green-triangles.svg)
+  background-image: url(./assets/Redstone-background.png)
 }
