@@ -7,6 +7,9 @@
     flex-direction: column;
     align-items: center;
     background: rgba(255, 0, 0, 0.7);
+    -webkit-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.75);
 }
 
 .MyHeader h1, h2, p {
