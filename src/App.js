@@ -12,18 +12,34 @@ const arrayShuffle = require('array-shuffle')
 
 
 class App extends React.Component {
+
   state = {
     images: images,
-    score: 0
+    score: 0,
+    hasBeenClicked: []
   };
 
-  handleClick = (score) => {
+  handleClick = (id) => {
+    console.log(id)
+    this.setState({ images: arrayShuffle(this.state.images) });
 
-    this.setState({images: arrayShuffle(this.state.images), score: score });
-    
     if (this.state.score === images.length - 1) {
       alert('You win')
     }
+    else if (!this.state.hasBeenClicked.includes(id)) {
+
+      let clickArray = this.state.hasBeenClicked;
+      clickArray.push(id);
+
+      this.setState({ hasBeenClicked: clickArray, score: this.state.score + 1 })
+      console.log(this.state.hasBeenClicked)
+    }
+    else if (this.state.hasBeenClicked.includes(id)) {
+      this.setState({ hasBeenClicked: [], score: 0 });
+      alert("You lost!")
+    }
+
+
 
   };
 
@@ -38,8 +54,9 @@ class App extends React.Component {
               alt={image.alt}
               id={image.id}
               key={image.id}
-              hasBeenClicked={image.hasBeenClicked}
               imageURL={image.imageURL}
+              hasLost={this.state.hasLost}
+              hasBeenClicked={this.state.hasBeenClicked}
               handleClick={this.handleClick}
               score={this.state.score}
             />
